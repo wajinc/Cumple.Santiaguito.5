@@ -43,6 +43,50 @@
     display: block;
 }
 
+/* Decoración de la sección de confirmación */
+.rsvp-web {
+    position: absolute;
+    top: 20px;
+    right: 8%;
+    font-size: 100px;
+    color: rgba(94, 220, 255, 0.12);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.rsvp-content {
+    position: relative;
+    z-index: 1;
+}
+
+@media (max-width: 700px) {
+    .rsvp-web {
+        font-size: 55px;
+        top: 10px;
+        right: 5%;
+        color: rgba(94, 220, 255, 0.10);
+    }
+}
+
+/* Contorno de las fotografías */
+.photo-placeholder {
+    box-sizing: border-box;
+    width: 100%;
+    height: 250px;
+    min-height: 250px;
+    overflow: hidden;
+    border: 1px dashed rgba(94, 220, 255, 0.6);
+    border-radius: 15px;
+    position: relative;
+}
+
+.photo-placeholder img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 body { margin: 0; color: var(--white); background: var(--navy); font-family: Inter, Arial, sans-serif; overflow-x: hidden; }
@@ -120,6 +164,19 @@ h2 { font: 400 clamp(32px, 5vw, 48px)/1.1 'Black Ops One', Impact, sans-serif; m
 .photo-placeholder { min-height: 245px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 9px; border: 1px dashed rgba(94,220,255,.4); background: radial-gradient(circle at 50% 40%, rgba(20,121,201,.24), rgba(8,24,42,.8)); color: var(--cyan); font: 24px 'Black Ops One', sans-serif; }
 .photo-placeholder small { font: 10px Inter, sans-serif; color: var(--muted); }
 .gallery-photo { width: 100%; height: 100%; min-height: 245px; object-fit: cover; display: block; border: 1px solid rgba(94,220,255,.25); }
+.photo-placeholder:nth-child(3) {
+    width: 100%;
+    height: 250px;
+    min-height: 250px;
+    overflow: hidden;
+}
+
+.photo-placeholder:nth-child(3) img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
 .gallery-hint { color: #778ba5; font-size: 10px; margin-top: 18px; }
 .rsvp-section { position: relative; overflow: hidden; text-align: center; padding: 90px 0 100px; background: radial-gradient(ellipse at 50% 100%, rgba(20,121,201,.3), transparent 65%), linear-gradient(120deg, #101b30, #27101e); border-top: 1px solid rgba(237,38,56,.25); }
 .rsvp-content { position: relative; z-index: 1; }.rsvp-content > p:not(.section-kicker) { color: #bac8da; font-size: 13px; line-height: 1.7; margin: 18px 0 28px; }
