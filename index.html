@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#081426">
+  <meta name="description" content="¡Estás invitado a celebrar los 5 años de Santiaguito!">
+  <title>¡Santiaguito cumple 5 años! | Invitación</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="page-glow" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="brand" href="#inicio" aria-label="Inicio">
+      <span>INVITACIÓN ESPECIAL</span>
+    </a>
+    <a class="topbar-link" href="#detalles">VER DETALLES <span>↘</span></a>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <img class="hero-art" src="assets/images/hero.jpeg" alt="Ilustración de un superhéroe arácnido original en una ciudad" aria-hidden="true">
+      <div class="web web-left" aria-hidden="true"></div>
+      <div class="web web-right" aria-hidden="true"></div>
+      <div class="hero-content">
+        <p class="eyebrow"><span class="eyebrow-line"></span> UNA MISIÓN MUY ESPECIAL <span class="eyebrow-line"></span></p>
+      <div class="hero-emblem" aria-hidden="true">
+    <img src="assets/images/logo.jpg" alt="">
+</div>
+        <h1><span class="title-small">SANTIAGUITO</span><span class="title-main">CUMPLE <b>5</b></span><span class="title-years">AÑOS</span></h1>
+        <p class="hero-copy">Un gran héroe está por celebrar su día…<br>¡y queremos que formes parte de esta aventura!</p>
+        <a class="primary-button" href="#detalles">ACEPTO LA MISIÓN <span>➜</span></a>
+      
+      <div class="cityscape" aria-hidden="true">
+        <div class="building b1"></div><div class="building b2"></div><div class="building b3"></div>
+        <div class="building b4"></div><div class="building b5"></div><div class="building b6"></div>
+      </div>
+      <div class="hero-bottom-line"></div>
+    </section>
+
+    <section class="countdown-section section-wrap">
+      <p class="section-kicker">LA CUENTA REGRESIVA COMIENZA</p>
+      <h2>¡El día de la misión se acerca!</h2>
+      <div class="countdown" id="countdown" aria-live="polite">
+        <div class="count-box"><strong id="days">--</strong><span>DÍAS</span></div>
+        <div class="count-separator">:</div>
+        <div class="count-box"><strong id="hours">--</strong><span>HORAS</span></div>
+        <div class="count-separator">:</div>
+        <div class="count-box"><strong id="minutes">--</strong><span>MINUTOS</span></div>
+        <div class="count-separator">:</div>
+        <div class="count-box"><strong id="seconds">--</strong><span>SEGUNDOS</span></div>
+      </div>
+      <p class="count-note" id="countdown-message">Marca tu calendario y prepárate para celebrar.</p>
+    </section>
+
+    <section class="details-section" id="detalles">
+      <div class="section-wrap">
+        <h2>Detalles de la misión</h2>
+        <p class="section-description">Aquí tienes todo lo que necesitas para acompañarnos.</p>
+        <div class="details-grid">
+          <article class="detail-card">
+            <div class="detail-icon">◷</div><p class="card-label">¿CUÁNDO?</p>
+            <h3>Domingo</h3><p>6 de diciembre de 2026</p><p class="detail-highlight">2:30 PM</p>
+          </article>
+          <article class="detail-card">
+            <div class="detail-icon">⌖</div><p class="card-label">¿DÓNDE?</p>
+            <h3>¡Nos vemos aquí!</h3><p>KM 21.8 Carretera San Pedro Sacatepéquez</p>
+            <a class="text-link" id="maps-link" href="#" target="_blank" rel="noopener">ABRIR UBICACIÓN ↗</a>
+          </article>
+          <article class="detail-card">
+            <div class="detail-icon">★</div><p class="card-label">¿QUIÉN CELEBRA?</p>
+            <h3>Santiaguito</h3><p>¡Nuestro héroe cumple</p><p class="detail-highlight">5 años!</p>
+          </article>
+        </div>
+        <div class="calendar-wrap">
+          <div><p class="card-label">NO TE QUEDES FUERA</p><h3>Guarda la fecha</h3><p>Agrega la celebración a tu calendario para que no se te olvide.</p></div>
+          <button class="outline-button" id="calendar-button" type="button">＋ AGREGAR AL CALENDARIO</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery-section section-wrap">
+      <p class="section-kicker">NUESTRO HÉROE</p>
+      <h2>Momentos de Santi</h2>
+      <div class="gallery-grid" id="gallery">
+    <div class="photo-placeholder">
+        <img src="assets/images/foto1.png" alt="Foto 1">
+    </div>
+
+    <div class="photo-placeholder">
+        <img src="assets/images/foto2.png" alt="Foto 2">
+    </div>
+
+    <div class="photo-placeholder">
+        <img src="assets/images/foto3.png" alt="Foto 3">
+    </div>
+</div>
+    </section>
+
+    <section class="rsvp-section">
+      <div class="rsvp-web" aria-hidden="true">✳</div>
+      <div class="section-wrap rsvp-content">
+        <p class="section-kicker">LOS HÉROES SE REÚNEN</p>
+        <h2>¿Contamos contigo?</h2>
+        <p>Confirma tu asistencia y ayúdanos a preparar una celebración increíble.</p>
+        <a class="primary-button whatsapp-button" id="whatsapp-link" href="#" target="_blank" rel="noopener">CONFIRMAR POR WHATSAPP <span>➜</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="footer-small"> HECHO CON MUCHO CARIÑO POR MI PAPI... ¡TE ESPERAMOS!</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <audio id="background-music" loop>
+    <source src="assets/music/song.mp3" type="audio/mpeg">
+</audio>
+</body>
+</html>
